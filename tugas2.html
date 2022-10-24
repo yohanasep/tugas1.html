@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Future Me</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(236, 245, 242);
+        }
+        
+        body {
+            font-family: 'times new roman';
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            height: 100;
+        }
+        
+        h1 {
+            font-size: 25px;
+            color: rgb(12, 132, 78);
+        }
+        
+        #account {
+            margin: 10px;
+            padding: 10px;
+            text-align: left;
+            min-height: 25px;
+            min-width: 720px;
+        }
+        
+        #account1 {
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            min-height: 15px;
+            min-width: 220px;
+        }
+        
+        #message {
+            vertical-align: 80px;
+            min-height: 110px;
+            min-width: 830px;
+            text-align: center;
+        }
+        
+        .adress {
+            text-align: center;
+            align-items: flex;
+            justify-content: center;
+            width: 83%;
+        }
+        
+        .adress1 {
+            text-align: center;
+        }
+        
+        .disc span {
+            color: red;
+            font-size: 20px;
+        }
+        
+        #send {
+            color: aliceblue;
+            background-color: rgb(58, 84, 75);
+        }
+        
+        #cancel {
+            color: aliceblue;
+            background-color: rgb(58, 84, 75);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Message your future self here!</h1>
+        <br>
+        <fieldset>
+            <legend>Account</legend>
+            <table id="account">
+                <tr>
+                    <td><label for="email">Email Address: </label>&emsp;&emsp;&emsp;&emsp;<br></td>
+                    <td><input type="email" placeholder="@email" id="account" name="email"><br><br></td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td><label for="nama">Name: </label><br></td>
+                        <td><input type="text" placeholder="Full Name" id="account" name="nama"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fb">Facebook: </label><br></td>
+                        <td><input type="text" placeholder="Facebook" id="account" name="fb"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="insta">Instagram: </label><br></td>
+                        <td><input type="text" placeholder="@instagram" id="account" name="insta"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Wa">WhatsApp: </label><br></td>
+                        <td><input type="number" placeholder="Whatsapp Number" id="account" name="Wa"></td>
+                    </tr>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Set the Date & the Adress</legend>
+            <p>When should this message arrive?</p>
+            <input type="date" id="tanggal" name="tanggal">
+            <br><br>
+            <p class="adress1">Where do you want us to send this? </p>
+
+            <input type="radio" class="adress1" value="email" name="email1">
+            <label class="adress" for="email1">Email</label>&emsp;&nbsp;
+
+            <input class="adress1" type="radio" value="facebook1" name="fb1">
+            <label class="adress1" for="fb1">Facebook</label>&emsp;&nbsp;
+
+            <input class="adress1" type="radio" value="instagram" name="insta1">
+            <label class="adress1" for="insta1">Instagram</label>&emsp;&nbsp;
+
+            <input class="adress1" type="radio" value="whatsApp1" name="Wa1">
+            <label class="adress1" for="Wa1">WhatsApp</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Message</legend>
+            <tr> <input type="textarea" name="pesan" placeholder="type your message" id="message"></tr>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Payment</legend>
+            <p>Make every moment memorable</p>
+            <p>Special offer for our new member</p>
+            <p class="disc">Message your future self for<span>just $1.5/month!!!</span></p>
+            <br>
+            <select id="pembayaran"> 
+            <option>Choose payment</option> 
+            <option>PayPal</option> 
+            <option>Payoneer</option> 
+            <option>Google Wallet</option> 
+            <option>Skrill</option> 
+            <option>Stripe</option> 
+        </select>
+            <br><br>
+            <label for="pin">Your PIN: </label>
+            <input type="password" placeholder="PIN" id="account1" name="pin"><br><br>
+        </fieldset>
+        <br><br><br>
+        <td><input type="checkbox" name="p.policy"></td>
+        <td><label for="p.policy">I have read and agree to the<a href="">Terms & Condition</a>and<a href="">Privacy Policy.</a></label> </td>
+        <br><br>
+        <input type="submit" value="Send" id="send">
+        <input type="reset" value="Cancel" id="cancel">
+    </form>
+</body>
+
+</html>
